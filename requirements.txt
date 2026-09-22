@@ -1,0 +1,12 @@
+# ---- Core (required by the Python package) ----
+openai==2.36.0
+pydantic==2.13.4
+numpy==2.3.5
+
+# ---- Optional: faster similarity retrieval (numpy fallback works without it) ----
+faiss-cpu==1.13.2
+
+# ---- Local model serving: only needed if you deploy vLLM yourself ----
+vllm==0.19.1
+# On a CUDA machine this can also be installed with:
+# uv pip install vllm --torch-backend=auto

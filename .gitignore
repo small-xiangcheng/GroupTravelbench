@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+
+# ---- Logs ----
+logs/
+Logs/
+*.log
+
+# ---- Runtime / restored data / outputs ----
+# Leading "/" limits these rules to the repository root so that
+# data_archive/sandbox_cache and data_archive/poi2category shards are not ignored.
+/eval_output/
+/infer_output/
+/output/
+# Restored by scripts/restore_data.sh from data_archive/; do not commit:
+/sandbox_cache/
+/poi2category/
+# Produced by precompute_embeddings.py, plus cache-miss logs:
+*.npz
+*missed.json
+
+# ---- Large data archives ----
+# The raw large directories are ignored above; commit the split shards
+# under data_archive/ instead (each shard is <100MB).
+# Force-track data_archive/ so its contents stay in the repo:
+!/data_archive/
+# Backup dirs created during restore should not be committed:
+*.bak.*/
+*.bak/
