@@ -131,7 +131,7 @@ source scripts/vllm_embedding_server.sh  # Optional: serve the embedding model
 
 Every role runs on its own model, and they have very different requirements:
 
-| Role | Requirement | This work |s
+| Role | Requirement | This work |
 |------|-------------|-----------|
 | Agent (`MODEL_NAME`) | The model under test | — |
 | User simulator (`USER_LLM`) | **Must be a strong thinking model.** It has to stay in character, react to the group and know when to compromise; a weak / non-thinking model degrades simulation quality badly. Thinking is ON (`USER_ENABLE_THINKING=true`), and the scripts give it 16384 `max_tokens`. | `DeepSeek-V4-Flash` |
