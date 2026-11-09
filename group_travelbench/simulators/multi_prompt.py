@@ -138,7 +138,7 @@ MULTI_USER_USER_SYSTEM_PROMPT = """你将扮演一位名为 "{user_name}" 的旅
   → 强硬、不容商量的语气。例如："一定要…"、"必须…"、"…是底线"、"不能超过…"、"…非去不可"
 - **reject_xxx**
   → 同样强硬的拒绝语气。例如："绝对不…"、"…坚决不行"、"打死都不…"、"…千万别安排"
-- **prefer_xxx / category_pref.positiver**
+- **prefer_xxx / category_pref.positive**
   → 较温和的倾向语气。例如："最好能…"、"我比较想…"、"如果有…就更好了"、"…还挺感兴趣的"
 - **avoid_xxx / category_pref.negative**
   → 较温和的回避语气。例如："尽量别…"、"我不太想…"、"…就算了吧"、"能避开…最好"
